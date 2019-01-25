@@ -1,0 +1,201 @@
+  @mixin button{  
+    width: auto;
+    border-width: 0px;
+    background: $buttonColor;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    line-height: 17px;
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  background: $contentBackground;
+  font: $bodyFont;
+}
+header {
+  background: $headerBackground;
+  height: 100vh;
+  section {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -10%;
+  }
+  h1 {
+    font-size: $header1FontSize;
+    color: $headerTitleColor;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 30px;
+    letter-spacing: $header1LetterSpacing;
+  }
+  .btn.btn-top {
+  	@include button;
+    padding: 15px 65px;
+    font-size: 14px;
+  }
+}
+.top-wrapper {
+  display: flex;
+  .logo {
+    margin-right: auto;
+    img {
+      border-style: none;
+      vertical-align: top;
+      max-width: 230px;
+      height: auto;
+    }
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.5em;
+    height: 55px;
+    a {
+      color: $headerTitleColor;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-right: 2px solid $borderColor;
+      padding: 15px 92px 15px 106px;
+      width: 82px;
+      &:last-child {
+        border-right: 0px;
+      }
+    }
+  }
+}
+main {
+  margin: 0 auto;
+  width: 960px;
+  p {
+    color: $contentTextColor;
+    font-size: $contentFontSize;
+    padding-bottom: 20px;
+  }
+  .toolbar {
+    text-align: right;
+    padding: 17px 8px;
+    input[type="text"] {
+      padding: 10px 20px;
+    }
+  }
+  h1 {
+    font-size: $header1FontSize;
+    line-height: 1.2;
+    color: $sectionTitleColor;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: $header1LetterSpacing;
+  }
+}
+article {
+  background-color: $articleBackground;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 20px 10px 10px;
+  margin-bottom: 20px;
+  img {
+    width: 280px;
+    height: 280px;
+  }
+  button.btn {
+  	@include button;
+    font: $contentFormFont;
+    padding: 10px 73px;
+    font-size: 14px;
+    float: right;
+  }
+  .post {
+    padding-left: 13px;
+    font-size: 12px;
+    color: $contentTextColor;
+    h3 {
+      font-size: $header3FontSize;
+      color: $contentTitleColor;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-top: 6px;
+      letter-spacing: $contentLetterSpacing;
+    }
+    .post-description {
+      color: $contentDescriptionColor;
+      border-bottom: 1px solid $borderColor;
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+}
+.about {
+  width: 97%;
+  margin: 65px auto 53px;
+  img {
+    width: 100%;
+  }
+}
+.contact-form {
+  text-align: right;
+  h4 {
+    font-size: $contentFontSize;
+    color: $sectionTitleColor;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: right;
+  }
+  .form-wrapper {
+    margin: 20px 0;
+    .text-field {
+      width: 100%;
+      span {
+        width: 49.7%;
+        display: inline-block;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 14px 10px;
+        box-sizing: border-box;
+      }
+      input[type="email"] {
+        width: 100%;
+        padding: 14px 10px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  label {
+    color: $labelColor;
+  }
+  .textarea-field {
+    padding: 20px 0 15px;
+    textarea {
+      width: 100%;
+      height: 120px;
+      box-sizing: border-box;
+      padding: 14px 10px;
+    }
+  }
+  input[type=submit] {
+  	@include button;
+    font: $contentFormFont;
+    padding: 10px 83px;
+    font-size: 13px;
+  }
+}
+footer span {
+  padding: 10px 20px;
+  font-size: 12px;
+}

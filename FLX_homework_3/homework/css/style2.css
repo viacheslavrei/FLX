@@ -1,0 +1,181 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  background: #efefef;
+  font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+
+header {
+  background: url(../img/header_background_v2.jpg) no-repeat top/cover;
+  height: 100vh; }
+  header section {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -10%; }
+  header h1 {
+    font-size: 27px;
+    color: #ff5722;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 30px;
+    letter-spacing: 0em; }
+  header .btn.btn-top {
+    width: auto;
+    border-width: 0px;
+    background: #0401ac;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    line-height: 17px;
+    padding: 15px 65px;
+    font-size: 14px; }
+
+.top-wrapper {
+  display: flex; }
+  .top-wrapper .logo {
+    margin-right: auto; }
+    .top-wrapper .logo img {
+      border-style: none;
+      vertical-align: top;
+      max-width: 230px;
+      height: auto; }
+  .top-wrapper nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.5em;
+    height: 55px; }
+    .top-wrapper nav a {
+      color: #ff5722;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-right: 2px solid #cfd8dc;
+      padding: 15px 92px 15px 106px;
+      width: 82px; }
+      .top-wrapper nav a:last-child {
+        border-right: 0px; }
+
+main {
+  margin: 0 auto;
+  width: 960px; }
+  main p {
+    color: #757575;
+    font-size: 18px;
+    padding-bottom: 20px; }
+  main .toolbar {
+    text-align: right;
+    padding: 17px 8px; }
+    main .toolbar input[type="text"] {
+      padding: 10px 20px; }
+  main h1 {
+    font-size: 27px;
+    line-height: 1.2;
+    color: #757575;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: 0em; }
+
+article {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 20px 10px 10px;
+  margin-bottom: 20px; }
+  article img {
+    width: 280px;
+    height: 280px; }
+  article button.btn {
+    width: auto;
+    border-width: 0px;
+    background: #0401ac;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    line-height: 17px;
+    font: normal 300 14px/23px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+    padding: 10px 73px;
+    font-size: 14px;
+    float: right; }
+  article .post {
+    padding-left: 13px;
+    font-size: 12px;
+    color: #757575; }
+    article .post h3 {
+      font-size: 21px;
+      color: #607d8b;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-top: 6px;
+      letter-spacing: 0em; }
+    article .post .post-description {
+      color: #bdbdbd;
+      border-bottom: 1px solid #cfd8dc;
+      font-size: 12px;
+      padding: 5px; }
+
+.about {
+  width: 97%;
+  margin: 65px auto 53px; }
+  .about img {
+    width: 100%; }
+
+.contact-form {
+  text-align: right; }
+  .contact-form h4 {
+    font-size: 18px;
+    color: #757575;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: right; }
+  .contact-form .form-wrapper {
+    margin: 20px 0; }
+    .contact-form .form-wrapper .text-field {
+      width: 100%; }
+      .contact-form .form-wrapper .text-field span {
+        width: 49.7%;
+        display: inline-block; }
+      .contact-form .form-wrapper .text-field input[type="text"] {
+        width: 100%;
+        padding: 14px 10px;
+        box-sizing: border-box; }
+      .contact-form .form-wrapper .text-field input[type="email"] {
+        width: 100%;
+        padding: 14px 10px;
+        box-sizing: border-box; }
+  .contact-form label {
+    color: #607d8b; }
+  .contact-form .textarea-field {
+    padding: 20px 0 15px; }
+    .contact-form .textarea-field textarea {
+      width: 100%;
+      height: 120px;
+      box-sizing: border-box;
+      padding: 14px 10px; }
+  .contact-form input[type=submit] {
+    width: auto;
+    border-width: 0px;
+    background: #0401ac;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    line-height: 17px;
+    font: normal 300 14px/23px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+    padding: 10px 83px;
+    font-size: 13px; }
+
+footer span {
+  padding: 10px 20px;
+  font-size: 12px; }
