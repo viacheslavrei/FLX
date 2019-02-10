@@ -6,7 +6,10 @@ if (wantToPlay) {
     attemptsCount = 3,
     currentPrize = maxPrize;
   while (attemptsCount > 0) {
-    var userChoice = +prompt('Enter a number from 0 to ' + maxRange + "\r\n" + 'Attempts left: ' + attemptsCount + "\r\n" + 'Total prize: ' + prize + "\r\n" + 'Possible prize on current attempt: ' + currentPrize)
+    var userChoice = +prompt('Enter a number from 0 to '+maxRange+"\r\n"+
+'Attempts left: '+attemptsCount+"\r\n"+
+'Total prize: '+prize+"\r\n"+
+'Possible prize on current attempt: '+currentPrize)
     if (userChoice === Math.floor(Math.random() * maxRange)) {
       prize += currentPrize;
       var continuePlay = confirm('Congratulation! Your prize is: ' + prize + '. Do you want to continue?');
