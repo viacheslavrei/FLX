@@ -72,17 +72,17 @@ filterArray([2, 5, 8], function(el) {
 
 function getAmountOfAdultPeople(insertData) {
   return filterArray(insertData, function(el) {
-    el.age > 18
+    return el.age > 18
   }).length;
 }
 getAmountOfAdultPeople(data);
 
 function getGreenAdultBananaLovers(insertData) {
   var filterPeople = filterArray(insertData, function(el) {
-    el.age > 18 && el.favoriteFruit === "banana" && el.eyeColor === "green"
+    return el.age > 18 && el.favoriteFruit === "banana" && el.eyeColor === "green"
   });
   return mapArray(filterPeople, function(el) {
-    el.name
+   return el.name
   });
 }
 getGreenAdultBananaLovers(data);
