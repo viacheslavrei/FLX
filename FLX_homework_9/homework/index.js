@@ -27,7 +27,7 @@ var data = [{
   "name": "George",
   "favoriteFruit": "banana"
 }]
-//1
+
 function findTypes() {
   var args = [];
   for (var i = 0; i < arguments.length; i++) {
@@ -36,7 +36,7 @@ function findTypes() {
   return args;
 }
 findTypes(null, 5, 'hello')
-//2
+
 function executeforEach(arr, func) {
   for (var i = 0; i < arr.length; i++) {
     func(arr[i]);
@@ -45,7 +45,7 @@ function executeforEach(arr, func) {
 executeforEach([1, 2, 3], function(el) {
   console.log(el)
 })
-//3
+
 function mapArray(arr, func) {
   var transformed = [];
   executeforEach(arr, function(el) {
@@ -56,7 +56,7 @@ function mapArray(arr, func) {
 mapArray([2, 5, 8], function(el) {
   return el + 3
 })
-//4
+
 function filterArray(arr, func) {
   var transformed = [];
   executeforEach(arr, function(el) {
@@ -69,14 +69,14 @@ function filterArray(arr, func) {
 filterArray([2, 5, 8], function(el) {
   return el > 3
 })
-//5
+
 function getAmountOfAdultPeople(insertData) {
   return filterArray(insertData, function(el) {
     el.age > 18
   }).length;
 }
 getAmountOfAdultPeople(data);
-//6
+
 function getGreenAdultBananaLovers(insertData) {
   var filterPeople = filterArray(insertData, function(el) {
     el.age > 18 && el.favoriteFruit === "banana" && el.eyeColor === "green"
@@ -86,31 +86,31 @@ function getGreenAdultBananaLovers(insertData) {
   });
 }
 getGreenAdultBananaLovers(data);
-//7
+
 function keys(arr) {
   var ids = Object.keys(arr);
   return ids;
 }
 keys({ keyOne: 1, keyTwo: 2, keyThree: 3 })
-//8
+
 function values(arr) {
   var ids = Object.values(arr);
   return ids;
 }
 values({ keyOne: 1, keyTwo: 2, keyThree: 3})
-//9
+
 function showFormattedDate(date) {
   var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   return 'Date: ' + date.getDate() + ' of ' + month[date.getMonth()] + ', ' + date.getFullYear();
 }
 showFormattedDate(new Date('2019-01-27T01:10:00'))
-//10
+
 function isEvenYear(date) {
   var year = date.getFullYear();
   return (year) % 2 === 0;
 }
 isEvenYear(new Date('2019-01-27T01:10:00'))
-//11
+
 function isEvenMonth(date) {
   var month = date.getMonth();
   return (month + 1) % 2 === 0;
